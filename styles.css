@@ -67,9 +67,6 @@ body {
     color: #1f1e1e;
     transition: color 0.2s;
 }
-.main {
-  flex: 1 0 auto;
-}
 
 .section-title {
   box-sizing: border-box;
@@ -217,4 +214,42 @@ body {
 .listing__event-card {
   width: calc(33.333% - 60px);
   margin: 0 30px 120px;
+}
+
+.reserve{
+  display: grid;
+  grid-template-columns: 405px 1fr;
+  grid-template-areas: 
+  "checkbox scheme"
+  "order legend";
+  gap: 65px 11%;
+  width: 100%;
+ }
+
+ .reserve__checkbox{
+  grid-area: "checkbox";
+  background-color: red;
+ }
+
+ .reserve__scheme{
+  grid-area: "scheme";
+  background-color: blue;
+ }
+
+ .reserve__order{
+  grid-area: "order";
+  background-color: orange;
+ }
+
+ .reserve__legend{
+  grid-area: "legend";
+  background-color: fuchsia;
+ }
+
+.main {
+  flex: 1 0 auto;
+}
+
+.page-footer {
+  flex: 0 0;
 }

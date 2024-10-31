@@ -1,8 +1,8 @@
 html,
 body {
-  width: 100%; 
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 .body {
@@ -11,12 +11,6 @@ body {
   flex-direction: column;
   min-height: 100vh;
   padding-top: 147px;
-  color: #1F1E1E;
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.375;
 }
 
 .page-header {
@@ -25,9 +19,11 @@ body {
   left: 0;
   width: 100%;
   height: 147px;
-  background-color: gray;
+  display: flex;
   align-items: center;
+  background-color: rgba(222, 222, 222, 0.5);
   backdrop-filter: blur(20px);
+  z-index: 100;
 }
 
 .page-header__container {
@@ -49,63 +45,31 @@ body {
   text-decoration: none;
 }
 
-.page-header__logo-icon {
-  width: 100%;
-  height: 100%;
+.page-header__logo-icon{
+    width: 100%;
+    height: 100%
 }
 
-.page-header__nav {
-  display: flex;
-  align-items: baseline;
-  margin: 0 auto;
-  gap: 50px;
-
-
+.page-header__nav{
+    display: flex;
+    width: 457px;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0 auto;
+    gap: 50px;
 }
-
-.page-header__nav-link {
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 1.3;
-  color: #1f1f1f;
-  transition: color 0.2s;
+.page-header__nav-link{
+    margin: 0 25;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1f1e1e;
+    transition: color 0.2s;
 }
-
-.page-header__nav-link:hover,
-.page-header__nav-link:active {
-  color: #bc3324
-}
-
-.btn {
-  display: inline-flex;
-  box-sizing: border-box;
-  padding: 15px 40px;
-  background-color: transparent;
-  text-decoration: none;
-  border: 1px solid #1f1f1f;
-  border-radius: 0;
-  outline: none;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.3;
-  color: #1f1f1f;
-  transition: background-color 0.2s, color 0.2s;
-}
-
-
-
-
 .main {
   flex: 1 0 auto;
-  background-color: pink;
 }
-
-.page-footer {
-  flex: 0 0 auto;
-  background-color: gray;
-}
-
 
 .section-title {
   box-sizing: border-box;
@@ -146,6 +110,11 @@ body {
 .listing__events-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 60px;
+}
+
+.listing__event-card{
+  width: calc(33.333% - 40px);
 }
 
 .events {

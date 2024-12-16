@@ -1482,10 +1482,10 @@ textarea:focus::placeholder {
             align-items: flex-start;
     padding: 211px 30px 30px;
     background-color: rgba(222, 222, 222, 0.98);
-    -webkit-transition: -webkit-transform 0.4s;
-    transition: -webkit-transform 0.4s;
-    transition: transform 0.4s;
-    transition: transform 0.4s, -webkit-transform 0.4s;
+    -webkit-transition: -webkit-transform 10s;
+    transition: -webkit-transform 10s;
+    transition: transform 10s;
+    transition: transform 10s, -webkit-transform 10s;
     -webkit-transform: translateX(-100%);
         -ms-transform: translateX(-100%);
             transform: translateX(-100%);
